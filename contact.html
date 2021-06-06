@@ -14,7 +14,7 @@
 <body>
 
   <header class="page-header">
-    <! -- Add your own logo here -->
+    <!-- Add your own logo here -->
     <img src="img/logo.png" alt="Logo for Alexander Davidson" class="page-header_item">
     <nav class="main-navigation page-header_item">
       <ul role="menubar" class="navigation-list">
@@ -46,21 +46,22 @@
     <a href="mailto:alexander.davidson87@gmail.com">Contact Me!</a>
   </div>
 
-  <form action="" method="post" id="contact-form" class="contact-form">
+  <form action="/login-form-action" method="post" id="contact-form" class="contact-form">
     <ul class="contact-form-list">
-    <li>
-      <label class="standard-label" for="contact-email">Email: </label><br>
-      <input type="email" id="contact-email" required>
-    </li>
-    <li>
-      <label class="standard-label" for="contact-telephone">Phone: </label><br>
-      <input type="tel" id="contact-telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
-    </li>
-    <li>
-      <label class="standard-label" for="contact-message">Message: </label><br>
-      <textarea id="contact-message" required maxlength="240"></textarea><br>
-      <input type="submit" value="Send Message">
-    </li>
+      <li>
+        <label class="standard-label" for="contact-email">Email: </label><br>
+        <input type="email" id="contact-email" required>
+      </li>
+      <li>
+        <label class="standard-label" for="contact-telephone">Phone: </label><br>
+        <input type="tel" id="contact-telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+      </li>
+      <li>
+        <label class="standard-label" for="contact-message">Message: </label><br>
+        <textarea id="contact-message" required maxlength="240"></textarea><br>
+        <input type="submit" value="Send Message">
+      </li>
+    </ul>
   </form>
 
   <footer class="page-footer">

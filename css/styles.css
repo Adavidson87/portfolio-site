@@ -197,6 +197,10 @@ button:hover, button:focus, .button:hover, .button_focus {
   text-align: center;
 }
 
+.myflix-verisons {
+  display: inline-block
+}
+
 .grid {
   padding: 10px;
   text-align: center;
@@ -220,6 +224,7 @@ button:hover, button:focus, .button:hover, .button_focus {
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 3;
+  height: 300px;
 }
 
 @supports (display:grid) {

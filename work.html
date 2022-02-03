@@ -7,130 +7,95 @@
   <link rel="shortcut icon" href="img/favicon-32x32.png">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="css/style.production.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
   <meta name="viewport" content="width=device-width, inital-scale=1">
 </head>
 
-<body>
-
-  <header class="page-header">
-    <!-- Add your own logo here -->
-    <img src="img/logo.png" alt="Logo for Alexander Davidson" class="page-header_item">
-    <nav class="main-navigation page-header_item">
-      <ul role="menubar" class="navigation-list">
-        <li role="presentation">
-          <a href="index.html" role="menuitem" class="navigation-list_item">Home</a>
-        </li>
-        <li role="presentation">
-          <a href="work.html" role="menuitem" class="navigation-list_item navigation-list_item-active">Work</a>
-        </li>
-        <li role="presentation">
-          <a href="about.html" role="menuitem" class="navigation-list_item">About Me</a>
-        </li>
-        <li role="presentation">
-          <a href="contact.html" role="menuitem" class="navigation-list_item">Contact</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Main content -->
-  <section class="work">
-    <h1>Work</h1>
-    <div class="grid">
-      <!-- Grid Items will live here -->
-      <div class="grid_item">
-        <h2>Portfolio Site</h2>
-        <p>
-          This website, where I am able to show the projects I have worked on, on my journey to be a web developer. It
-          was built with HTML and CSS.
-        </p>
-        <a href="https://github.com/Adavidson87/portfolio-site">Check out the code for it here!</a>
-      </div>
-      <div class="grid_item">
-        <h2>Simple Pokedex App</h2>
-        <p>
-          First app I built with javascript. It is a simple pokedex app for the original 150 pokemon. It uses data from
-          an external API. It uses HTML, JavaScript and CSS.
-        </p>
-        <ul class="work-links">
-          <li><a href="img/pokedex-screenshot.png"><img src="img/pokedex-screenshot.png" style="max-width: 400px"></a>
+<body class="page-container">
+  <div class="content-wrap">
+    <header class="page-header">
+      <img src="img/logo.png" alt="Logo for Alexander Davidson" class="page-header_item">
+      <nav class="main-navigation page-header_item">
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a href="index.html" role="menuitem" class="navigation-list_item">Home</a>
           </li>
-          <li><a href="https://adavidson87.github.io/my-pokedex-app/">Pokedex App</a></li>
-          <li><a href="https://github.com/Adavidson87/my-pokedex-app">Code for Pokedex</a></li>
+          <li role="presentation">
+            <a href="work.html" role="menuitem" class="navigation-list_item navigation-list_item-active">Projects</a>
+          </li>
+          <li role="presentation">
+            <a href="about.html" role="menuitem" class="navigation-list_item">About Me</a>
+          </li>
+          <li role="presentation">
+            <a href="contact.html" role="menuitem" class="navigation-list_item">Contact Me</a>
+          </li>
         </ul>
-      </div>
-      <div class="grid_item">
-        <h2>Basic To-Do List</h2>
-        <p>
-          A very basic to-do list app built with javascript. Allows you to add items, cross them out, and delete them.
-          It does not currently save the list between page refreshes however.
-        </p>
-        <ul class="work-links">
-          <li><a href="img/to-do-list.png"><img src="img/to-do-list.png" style="max-width: 400px"></a></li>
-          <li><a href="https://adavidson87.github.io/to-do-list-app/?ListItem=first+item">To-Do List</a></li>
-          <li><a href="https://github.com/Adavidson87/to-do-list-app">Code</a></li>
-        </ul>
-      </div>
-      <div class="grid_item">
-        <h2>myFlix</h2>
-        <p>An app that shows a list of movies and allows you to register an account and create a favorites list. As well
-          as search for movies by their titles. It contains information on the directors as well as the genre. It was
-          build with two versions, one with React and the other with Angular. The back-end is an API that I build
-          myself.</p>
-        <p>On the backend, the app utilizes Node.js and Express and uses REST architecture. The database for it was
-          built with MongoDB and modeled with Mongoose. It is hosted on Github pages and deployed through Heroku.</p>
-        <p>The React version is a single-page application. It uses React, Redux, and Bootstrap.</p>
-        <p>The Angular verison uses Angular Material.</p>
-        <div class="myflix-verisons">
-          <ul class="work-links">
-            <li><a href="img/myFlix-React-client.png"><img src="img/myFlix-React-client.png"
-                  style="max-width: 400px"></a></li>
-            <li><a href="https://cryptic-waters-myflix.netlify.app/">React version</a></li>
-            <li><a href="https://github.com/Adavidson87/myFlix-client">React version code here</li>
-          </ul>
-          <ul class="work-links">
-            <li><a href="img/myFlix-Angular-client.png"><img src="img/myFlix-Angular-client.png"
-                  style="max-width: 400px"></a></li>
-            <li><a href="https://adavidson87.github.io/myflix-Angular-client/welcome">Angular version</a></li>
-            <li><a href="https://github.com/Adavidson87/myflix-Angular-client">Angular verison code here</li>
-          </ul>
+      </nav>
+    </header>
+
+    <section class="work">
+      <h1>projects</h1>
+      <div class="grid">
+
+        <div class="grid_item">
+          <h2>myFlix</h2>
+          <a href="img/myFlix-React-client.png"><img src="img/myFlix-React-client.png" style="max-width: 400px"></a>
+          <p>An app for viewing details about movies. Two versions, one with MEAN stack and one with MERN stack.</p>
+
+          <a href="projects/myFlix.html">Click here for details!</a>
         </div>
-        <ul class="work-links">
-          <li><a href="https://github.com/Adavidson87/movie_api">API code here</a></li>
-        </ul>
+
+        <div class="grid_item">
+          <h2>Meet App</h2>
+          <a href="img/meet-app.png"><img src="img/meet-app.png" style="max-width: 400px"></a>
+          <p>
+            An app for finding events to attend.
+          </p>
+
+          <a href="projects/meet.html">Click here for details!</a>
+        </div>
+
+        <div class="grid_item">
+          <h2>Hello-World</h2>
+          <a href="img/hello-world.png"><img src="img/hello-world.png" style="max-width: 400px; max-height: 400px;"></a>
+          <p>A mobile chat app.</p>
+
+          <a href="helloWorld.html">Click here for details!</a>
+        </div>
+
+        <div class="grid_item">
+          <h2>Pokedex App</h2>
+          <a href="img/pokedex-screenshot.png"><img src="img/pokedex-screenshot.png" style="max-width: 400px"></a>
+          <p>
+            A pokedex app of the original 150 pokemon.
+          </p>
+
+          <a href="projects/pokedex.html">Click here for details!</a>
+        </div>
+
+        <div class="grid_item">
+          <h2>To-Do List</h2>
+          <a href="img/to-do-list.png"><img src="img/to-do-list.png" style="max-width: 400px"></a>
+          <p>
+            A classic little to-do list app.
+          </p>
+
+          <a href="projects/toDoList.html">Click here for details!</a>
+        </div>
+
+        <div class="grid_item">
+          <h2>Your project here</h2>
+          <p>
+            I've reserved this spot for your project, so <a href="contact.html">contact me</a> and let's get to work!
+          </p>
+          <div class="resume-button">
+            <a href="files/Davidson-Alexander-Resume.pdf" class="button" download>Download my Resume</a><br>
+          </div>
+        </div>
+
       </div>
-      <div class="grid_item">
-        <h2>Meet App</h2>
-        <p>
-          This App makes use of React. It shows a list of events around the world in different cities. You can limit the
-          number of events shown or show only events in the city of your choice. Sign in using google credentials and
-          makes use of google calendar API.
-        </p>
-        <ul class="work-links">
-          <li><a href="img/meet-app.png"><img src="img/meet-app.png" style="max-width: 400px"></a></li>
-          <li><a href="https://github.com/Adavidson87/meet">See the code here</a></li>
-          <li><a href="adavidson87.github.io/meet">See the app here!</a></li>
-      </div>
-      <div class="grid_item">
-        <h2>Hello-World</h2>
-        <p>Hello-world is a mobile chat app. It allows you to take and send photos as well as your location. It was
-          build using React Native.</p>
-        <ul class="work-links">
-          <li><a href="img/hello-world.png"><img src="img/hello-world.png" style="max-width: 400px; max-height: 400px;"></a></li>
-          <li><a href="https://github.com/Adavidson87/hellow-world">See the code here</a></li>
-        </ul>
-      </div>
-      <div class="grid_item">
-        <h2>Maybe Your Project?</h2>
-        <p>
-          Once I get a handle on this web development stuff, and learn enough, I will be excited to create something for
-          you! So if you need something let me know!
-        </p>
-        <a href="contact.html">Here's How To Get A Hold Of Me!</a>
-      </div>
-    </div>
-  </section>
+    </section>
+  </div>
 
   <footer class="page-footer">
     <p>Find me on</p>

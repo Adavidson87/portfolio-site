@@ -10,7 +10,6 @@
 }
 
 body {
-
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -46,17 +45,14 @@ a {
 }
 
 a:hover, a:focus{
-  /* No underlining when hovering over a link */
   text-decoration: none;
 }
 
 a:visited {
-  /* visted link */
   color: var(--visited-links);
 }
 
 a:active {
-  /* selected link */
   color: var(--active-links);
 }
 
@@ -91,7 +87,7 @@ button:hover, button:focus, .button:hover, .button_focus {
   opacity: 0.8;
 }
 
-.navigation-list_item-active {
+.navigation-list-item-active {
   text-decoration: none;
 }
 
@@ -104,7 +100,7 @@ button:hover, button:focus, .button:hover, .button_focus {
   margin-left: 15px;
 }
 
-.profile_portrait {
+.profile-portrait {
   float: left;
   width: 250px;
   margin-right: 40px;
@@ -114,6 +110,31 @@ button:hover, button:focus, .button:hover, .button_focus {
 .profile {
   max-width: 700px;
   margin: 0 auto;
+}
+
+.highlighted-projects {
+  min-width: 250px;
+}
+
+.grid-highlights {
+  padding: 10px;
+  text-align: center;
+}
+
+.highlights-grid-item {
+  display: inline-block;
+  /* max-width: 600px; */
+  min-width: 400px;
+  width: 32%;
+  margin: 10px;
+  vertical-align: top;
+  background-color: var(--grid-background);
+  border-color: var(--border-color);
+  border-style: solid;
+  border-width: thin;
+  border-radius: 10px;
+  text-align: center;
+  padding-left: 5px;
 }
 
 .about {
@@ -178,12 +199,12 @@ button:hover, button:focus, .button:hover, .button_focus {
   padding: 20px;
 }
 
-.page-header_item {
+.page-header-item {
   flex: 0 1 200px;
   border-radius: 5%;
 }
 
-.page-header_item:last-child {
+.page-header-item:last-child {
   flex-grow: 1;
   text-align: right;
 }
@@ -201,7 +222,7 @@ button:hover, button:focus, .button:hover, .button_focus {
   text-align: center;
 }
 
-.grid_item {
+.grid-item {
   display: inline-block;
   width: 33.33%;
   margin: 10px;
@@ -215,7 +236,7 @@ button:hover, button:focus, .button:hover, .button_focus {
   padding-left: 5px;
 }
 
-.grid_item:last-child {
+.grid-item:last-child {
   grid-column-start: 3;
   grid-column-end: 3;
   grid-row-start: 1;
@@ -231,7 +252,7 @@ button:hover, button:focus, .button:hover, .button_focus {
     grid-gap: 20px;
     margin: 0;
   }
-  .grid_item {
+  .grid-item {
     background-color: var(--grid-background);
     border-color: var(--border-corlor);
     border-style: solid;
@@ -242,7 +263,7 @@ button:hover, button:focus, .button:hover, .button_focus {
     min-height: auto;
     margin: 0;
   }
-  .grid_item:last-child {
+  .grid-item:last-child {
     grid-column: 3/3;
     grid-row: 1/3;
   }
@@ -258,7 +279,7 @@ button:hover, button:focus, .button:hover, .button_focus {
         .grid {
           grid-gap: 10px;
         }
-        .grid_item:last-child {
+        .grid-item:last-child {
           grid-column: auto/auto;
           grid-row: auto/auto;
         }

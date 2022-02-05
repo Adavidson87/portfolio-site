@@ -35,29 +35,49 @@
     </header>
 
     <!-- Main content -->
-    <section class="work">
+    <section class="project-page">
 
-      <div class="grid-item">
+      <div class="project">
         <h2>myFlix</h2>
-        <p>An app that shows a list of movies and allows you to register an account and create a favorites list. As well
-          as search for movies by their titles. It contains information on the directors as well as the genre. It was
-          build with two versions, one with React and the other with Angular. The back-end is an API that I build
-          myself.</p>
-        <p>On the backend, the app utilizes Node.js and Express and uses REST architecture. The database for it was
-          built with MongoDB and modeled with Mongoose. It is hosted on Github pages and deployed through Heroku.</p>
-        <p>The React version is a single-page application. It uses React, Redux, and Bootstrap.</p>
-        <p>The Angular verison uses Angular Material.</p>
+        <a href="../img/myFlix-React-client.png"><img src="../img/myFlix-React-client.png" style="max-width: auto"
+            class="project-img"></a>
+        <p>myFlix is a web app, build with the MERN and MEAN tech stacks. It allows a user to view information about a
+          movies, directors, and genres. A user is able to create an account and make a list of their favorite movies.
+          The user is also able to edit their user information.
+          This app was developed as a learning exercise for my course on CareerFoundry.com. It was built to showcase my
+          skills as a full-stack developer that can build both the client-side and server-side of a project.
+        </p>
+        <a href="../img/myFlix-Angular-client.png"><img src="../img/myFlix-Angular-client.png" style="max-width: auto"
+            class="project-img"></a>
+        <p>A RESTful API was built with Node.js and Express to interact with MongoDB. The data from the API is accessed
+          with GET, POST, PUT, and DELETE HTTP methods. Movie data is provided by the API in a JSON format.
+          JavaScript Web Tokens are used for user authentication when a user logs into their account.
+        </p>
+        <a href="../img/myflix-postman-1.png"><img src="../img/myflix-postman-1.png" style="max-width: auto"
+            class="project-img"></a>
+        <a href="../img/myflix-postman-2.png"><img src="../img/myflix-postman-2.png" style="max-width: auto"
+            class="project-img"></a>
+        <p>Postman was used to test the HTTP methods to make sure the API was functional.
+          The client-side was developed to be a single-page web app. One version utilizes React and React-Redux while
+          the other uses AngularJS. Its purpose is to provide a user with an interface for interacting with the database
+          from a single view. It is where a user can login, view the movies in the database as well as the directors and
+          genres, and make a favorites list or view their profile.
+        </p>
+        <p>This made for some interesting challenges while learning, however most were overcome by simply reading
+          documentation. The issues that gave me the most trouble stemmed from the routing of information from the
+          database to being displayed for the client-side.
+          Routing was an issue for both the React and Angular versions I built. It took a lot of reading and tweaking
+          code to finally be able to move past it, but it took far longer than expected to do as well.
+        </p>
+        <p>The project was able to be finished on time and met expectations. I was able to learn some new frameworks and
+          libraries that I will be able to use in future projects. The experience with the routing, and how to use it
+          properly, will be very helpful when it comes to developing future projects as well.</p>
         <div class="myflix-verisons">
           <ul class="work-links">
-            <li><a href="../img/myFlix-React-client.png"><img src="../img/myFlix-React-client.png"
-                  style="max-width: 400px"></a>
-            </li>
             <li><a href="https://cryptic-waters-myflix.netlify.app/">React version</a></li>
             <li><a href="https://github.com/Adavidson87/myFlix-client">React version code here</li>
           </ul>
           <ul class="work-links">
-            <li><a href="../img/myFlix-Angular-client.png"><img src="../img/myFlix-Angular-client.png"
-                  style="max-width: 400px"></a></li>
             <li><a href="https://adavidson87.github.io/myflix-Angular-client/welcome">Angular version</a></li>
             <li><a href="https://github.com/Adavidson87/myflix-Angular-client">Angular verison code here</li>
           </ul>
@@ -67,17 +87,19 @@
         </ul>
       </div>
     </section>
-    
+
   </div>
 
   <footer class="page-footer">
     <p>Find me on</p>
     <div class="social-media">
-      <a href="https://www.github.com/Adavidson87/" target="_blank"><img src="../img/github_icon.svg" alt="Github"></a>
+      <a href="https://www.github.com/Adavidson87/" target="_blank"><img src="../img/github_icon.svg"
+          alt="Github icon"></a>
       <a href="https://www.linkedin.com/in/alexanderdavidson87/" target="_blank"><img src="../img/linkedin_icon.svg"
-          alt="LinkedIn"></a>
-      <a href="https://medium.com/@alexander.davidson87" target="_blank"><img src="../img/medium_icon.svg"></a>
-      <a href="https://twitter.com/AwDavidson87" target="_blank"><img src="../img/twitter_icon.svg" alt="Twitter"></a>
+          alt="LinkedIn icon"></a>
+      <a href="https://medium.com/@alexander.davidson87" target="_blank"><img src="../img/medium_icon.svg"
+          alt="Medium icon"></a>
+      <a href="https://twitter.com/AwDavidson87" target="_blank"><img src="../img/twitter_icon.svg" alt="Twitter Icon"></a>
     </div>
   </footer>
 

@@ -241,7 +241,7 @@ button:hover, button:focus, .button:hover, .button_focus {
 }
 
 .project-img {
-  width: auto;
+  /* width: auto; */
   max-width: 400px;
   margin-left: auto;
   margin-right: auto;;

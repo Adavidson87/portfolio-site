@@ -1,12 +1,13 @@
 :root {
   --primary-color: #062722;
   --dark-grey: #2b2b2b;
-  --background-color: #6ca1a1;
+  --background-color: #4d5c7a;
   --visted-links: #05676e;
   --active-links: #489c79;
-  --grid-background: rgb(216, 230, 230);
+  --grid-background: #e0e0e0;
   --button-text: rgb(216, 230, 230);
   --border-color: black;
+  --footer-background: #697496
 }
 
 body {
@@ -94,6 +95,12 @@ button:hover, button:focus, .button:hover, .button_focus {
 
 .navigation-list {
   list-style-type: none;
+  background-color: var(--grid-background);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-style: solid;
+  border-width: thin;
+  padding-right: 10px;
 }
 
 .navigation-list li {
@@ -106,6 +113,7 @@ button:hover, button:focus, .button:hover, .button_focus {
   width: 250px;
   margin-right: 40px;
   border-radius: 50%;
+  padding-top: 10px;
 }
 
 .profile {
@@ -114,10 +122,15 @@ button:hover, button:focus, .button:hover, .button_focus {
   padding-bottom: 75px;
   margin: 0 auto;
   padding-left: 10px;
+  background-color: var(--grid-background);
+  border-radius: 10px;
+  border-style: solid;
+  border-width: thin;
 }
 
 .highlighted-projects {
   text-align: center;
+  color: var(--grid-background)
 }
 
 .grid-highlights {
@@ -125,6 +138,7 @@ button:hover, button:focus, .button:hover, .button_focus {
   text-align: center;
   justify-content: center;
   margin: 0 auto;
+  color: black
 }
 
 .highlights-grid-item {
@@ -199,6 +213,11 @@ button:hover, button:focus, .button:hover, .button_focus {
   font-size: 20px;
   font-weight: 700;
   margin: 0 auto;
+  background-color: var(--footer-background);
+}
+
+.social-media {
+  background-color: var(--footer-background);
 }
 
 * {
@@ -213,7 +232,7 @@ button:hover, button:focus, .button:hover, .button_focus {
 
 .page-header-item {
   flex: 0 1 200px;
-  border-radius: 5%;
+  border-width: 0;
 }
 
 .page-header-item:last-child {

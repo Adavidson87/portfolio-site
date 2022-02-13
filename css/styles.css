@@ -113,7 +113,7 @@ button:hover, button:focus, .button:hover, .button_focus {
   width: 250px;
   margin-right: 40px;
   border-radius: 50%;
-  padding-top: 10px;
+  margin-top: 20px;
 }
 
 .profile {
@@ -171,6 +171,14 @@ button:hover, button:focus, .button:hover, .button_focus {
   background-color: var(--grid-background);
 }
 
+.about-me-portrait {
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  border-radius: 50%;
+  padding-top: 10px;
+}
+
 .about-grid {
   padding: 10px;
   text-align: center;
@@ -194,6 +202,14 @@ button:hover, button:focus, .button:hover, .button_focus {
   border-style: solid;
   border-radius: 10px;
   background-color: var(--grid-background);
+}
+
+.pasha-picture {
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  border-radius: 50%;
+  padding-top: 10px;
 }
 
 .contact-list {

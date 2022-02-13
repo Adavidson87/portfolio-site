@@ -344,4 +344,11 @@ button:hover, button:focus, .button:hover, .button_focus {
   list-style-type: none;
 }
 
+.work-title {
+  background-color: var(--grid-background);
+  border-color: var(--border-color);
+  border-style: solid;
+  border-width: thin;
+}
+
 

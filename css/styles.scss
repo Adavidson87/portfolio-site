@@ -628,6 +628,9 @@ section {
           a {
             color: var(--color-secondary);
             text-decoration: underline;
+            word-wrap: break-word;
+            width: 170px;
+            text-align: right;
             &:hover {
               text-shadow: 0 0 5px var(--gray-3);
               transform: scale(1.1);

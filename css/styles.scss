@@ -25,7 +25,7 @@
 }
 .light-mode {
   --color-primary: rgb(224, 224, 224);
-  --color-secondary: #2783ae;
+  --color-secondary: #D83B18;
   --white: #000;
   --black: #fff;
   --gray-0: #12181b;
@@ -48,6 +48,10 @@ a {
   text-decoration: none;
   color: inherit;
   font-family: inherit;
+  &:hover {
+    transform: scale(1.1);
+    text-shadow: 0 0 1px var(--white);
+  }
 }
 header {
   min-height: 100vh;
@@ -66,7 +70,7 @@ section {
   padding: 3rem 18rem;
 }
 .section {
-  transform: translateY(-100%) scale(0);
+  transform: translateY(100%) scale(0);
   transition: var(--transition);
 }
 .sec1 {
@@ -94,7 +98,7 @@ section {
   animation: scaleAnim 1s ease-in-out;
   @keyframes scaleAnim {
     0% {
-      transform: translateY(-100%) scaleY(0);
+      transform: translateX(100%) scaleY(0);
     }
 
     100% {
@@ -456,6 +460,10 @@ section {
         color: var(--white);
         margin-bottom: 1.5rem;
       }
+      p {
+        padding: 1.2rem;
+        text-align: center;
+      }
       .icons {
         display: flex;
         justify-content: center;
@@ -489,7 +497,6 @@ section {
 }
 .portfolio-item:hover .hover-item {
   opacity: 1;
-  // transform: scale(1);
   transition: var(--transition);
 }
 .flip-box {
@@ -583,6 +590,13 @@ section {
         color: var(--gray-2);
         line-height: 2rem;
         padding-bottom: 1rem;
+        a {
+          color: var(--color-secondary);
+          text-decoration: underline;
+          &:hover {
+            text-shadow: 0 0 10px var(--gray-3);
+          }
+        }
       }
     }
   }
@@ -611,6 +625,14 @@ section {
         p {
           margin: 0.3rem 0 !important;
           padding: 0 !important;
+          a {
+            color: var(--color-secondary);
+            text-decoration: underline;
+            &:hover {
+              text-shadow: 0 0 5px var(--gray-3);
+              transform: scale(1.1);
+            }
+          }
         }
         .icon {
           display: grid;
@@ -642,6 +664,7 @@ section {
         transition: var(--transition);
         &:hover {
           background-color: var(--color-secondary);
+          transform: scale;
           i {
             color: var(--color-primary);
           }

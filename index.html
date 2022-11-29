@@ -2,99 +2,492 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>Alexander Davidson Web Developer</title>
-  <link rel="shortcut icon" href="img/favicon-32x32.png">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
-  <meta name="viewport" content="width=device-width, inital-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexander Davidson Web Developer</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="page-container">
-  <div class="content-wrap">
-
-    <header class="page-header">
-      <img src="img/logo.png" alt="Logo for Alexander Davidson" class="page-header-img">
-      <nav class="main-navigation page-header-item">
-        <ul role="menubar" class="navigation-list">
-          <li role="presentation">
-            <a href="index.html" role="menuitem" class="navigation-list-item navigation-list-item-active">Home</a>
-          </li>
-          <li role="presentation">
-            <a href="work.html" role="menuitem" class="navigation-list-item ">Projects</a>
-          </li>
-          <li role="presentation">
-            <a href="about.html" role="menuitem" class="navigation-list-item">About Me</a>
-          </li>
-          <li role="presentation">
-            <a href="contact.html" role="menuitem" class="navigation-list-item">Contact Me</a>
-          </li>
-        </ul>
-      </nav>
+<body class="main-content">
+    <header class="section sec1 header active" id="home">
+        <div class="header-content">
+            <div class="left-header">
+                <div class="h-shape"></div>
+                <div class="image">
+                    <img src="/img/about-me-portrait.jpg">
+                </div>
+            </div>
+            <div class="right-header">
+                <h1 class="name">
+                    Hi, I'm <span>Alexander Davidson, </span>
+                    a web developer
+                </h1>
+                <p>
+                    I'm a web developer, who loves to create beautiful and function websites.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, libero?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neq bladitiis se aut!
+                </p>
+                <div class="btn-cnt">
+                    <a href="" class="main-btn">
+                        <span class="btn-text">Download Resume</span>
+                        <span class="btn-icon"><i class="fas fa-download"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <main class="profile">
-      <img src="img/profile_portrait.jpg" class="profile-portrait" alt="Alexander Davidson at a computer">
-      <h1>Greetings and salutations!</h1>
-      <p>
-        My name is Alexander Davidson. I am a web developer in Murfreesboro, Tennessee. I'm here to build you the
-        website or app that you want!
-      </p>
-      <a href="https://www.github.com/Adavidson87">Check out some of my code</a><br>
+    <main>
+
+        <section class="section sec2" id="about">
+            <div class="main-title">
+                <h2>About <span>me</span><span class="bg-text">my stats</span></h2>
+            </div>
+            <div class="about-cnt">
+                <div class="left-about">
+                    <h4>Information About Me</h4>
+                    <br />
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <br />
+                    <p>
+                        Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <br />
+                    <div class="btn-cnt">
+                        <a href="" class="main-btn">
+                            <span class="btn-text">Download Resume</span>
+                            <span class="btn-icon"><i class="fas fa-download"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="right-about">
+
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">10+</p>
+                            <p class="small-text">Projects <br /> Completed</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">0</p>
+                            <p class="small-text">Years of <br /> Experience </p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">0</p>
+                            <p class="small-text">Clients</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">0</p>
+                            <p class="small-text">Customer <br /> Reviews</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-stats">
+                <h4 class="stat-title">My skills</h4>
+                <div class="progress-bars">
+                    <div class="progress-bar">
+                        <p class="progress-title">html5</p>
+                        <div class="progress-cnt">
+                            <p class="progress-text">50%</p>
+                            <div class="progress">
+                                <span class="html"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="progress-title">CSS</p>
+                        <div class="progress-cnt">
+                            <p class="progress-text">40%</p>
+                            <div class="progress">
+                                <span class="css"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="progress-title">JavaScript</p>
+                        <div class="progress-cnt">
+                            <p class="progress-text">10%</p>
+                            <div class="progress">
+                                <span class="javascript"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h4 class="stat-title">My Timeline</h4>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="timeline-duration">2010 - present</p>
+                    <h5>Web Developer <span> - Vicrosoft</span></h5>
+                    <p>
+                        Lorem ispum dolor sit amet consectetur adipisicing elit. Saepe quasi ver fugit.
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="timeline-duration">2010 - present</p>
+                    <h5>Web Developer <span> - Vicrosoft</span></h5>
+                    <p>
+                        Lorem ispum dolor sit amet consectetur adipisicing elit. Saepe quasi ver fugit.
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="timeline-duration">2010 - present</p>
+                    <h5>Web Developer <span> - Vicrosoft</span></h5>
+                    <p>
+                        Lorem ispum dolor sit amet consectetur adipisicing elit. Saepe quasi ver fugit.
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="timeline-duration">2010 - present</p>
+                    <h5>Web Developer <span> - Vicrosoft</span></h5>
+                    <p>
+                        Lorem ispum dolor sit amet consectetur adipisicing elit. Saepe quasi ver fugit.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section sec3" id="portfolio">
+            <div class="main-title">
+                <h2>My <span>Portfolio</span><span class="bg-text">my work</span></h2>
+            </div>
+            <p class="port-text">
+                Here is some of my work that I've done.
+            </p>
+            <div class="portfolios">
+                <div class="flip-box">
+                    <div class="portfolio-item flip-box-inner">
+                        <div class="portfolio-image flip-box-front">
+                            <img src="/img/myFlix-React-client.png" alt="">
+                        </div>
+                        <div class="hover-item flip-box-back">
+                            <h3>Project Source</h3>
+                            <div class="icons">
+                                <a href="#" target="_blank" class="icon">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" target="_blank" class="icon">
+                                    <i class="fab fa-behance"></i>
+                                </a>
+                                <a href="#" target="_blank" class="icon">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-box">
+                    <div class="portfolio-item flip-box-inner">
+                        <div class="portfolio-image flip-box-front">
+                            <img src="/img/hello-world.png" alt="">
+                        </div>
+                        <div class="hover-item flip-box-back">
+                            <h3>Project Source</h3>
+                            <div class="icons">
+                                <a href="#" target="_blank" class="icon">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" target="_blank" class="icon">
+                                    <i class="fab fa-behance"></i>
+                                </a>
+                                <a href="#" target="_blank" class="icon">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-box">
+                    <div class="portfolio-item flip-box-inner">
+                        <div class="portfolio-image flip-box-front">
+                            <img src="/img/meet-app.png" alt="">
+                        </div>
+                        <div class="hover-item flip-box-back">
+                            <h3>Project Source</h3>
+                            <div class="icons">
+                                <a href="#" target="_blank" class="icon">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" target="_blank" class="icon">
+                                    <i class="fab fa-behance"></i>
+                                </a>
+                                <a href="#" target="_blank" class="icon">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section sec4" id="blogs">
+            <div class="main-title">
+                <h2>My <span>Blogs</span><span class="bg-text">my blogs</span></h2>
+            </div>
+            <div class="blogs-cnt">
+                <div class="blogs">
+                    <!-- <div class="blog">
+                        <img src="" alt="">
+                        <div class="photo-attribution">Photo by</div>
+                        <div class="blog-text"> <h4>Date</h4><p>Blog Text</p></div>
+                    </div> -->
+                    <div class="blog">
+                        <img src="https://images.unsplash.com/photo-1518655048521-f130df041f66?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3870&q=80"
+                            alt="magic keyboard beside mug and click pen photo">
+                        <div class="photo-attribution">Photo by <a
+                                href="https://unsplash.com/@fempreneurstyledstock?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Leone
+                                Venter</a> on <a
+                                href="https://unsplash.com/s/photos/blog-background?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                        </div>
+                        <div class="blog-text">
+                            <h4>29 Nov 2022 Day 4 of #100DaysOfCode</h4>
+                            <p>
+                                Actual start of the blog. I just went back and filled in the past few days to the start
+                                of the revamp. I started a web dev bootcamp in June last year, finished in Jan this
+                                year, and haven't had anykind of job prospects. Gave up looking actually. Decided this
+                                revamp of the portfolio site was a good time to get serious about it again. Going to
+                                start with this site and then move on to other things and try to code everyday, because
+                                that is the only way I will ever get a job coding. I just have to stick with it and try
+                                to learn something new everyday. I need that repetition to learn this stuff well enough
+                                to start a career.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="https://images.unsplash.com/photo-1432821596592-e2c18b78144f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3870&q=80"
+                            alt="vintage teal typewriter beside book photo">
+                        <div class="photo-attribution">
+                            Photo by <a
+                                href="https://unsplash.com/@retrosupply?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">RetroSupply</a>
+                            on <a
+                                href="https://unsplash.com/s/photos/blog-background?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                        </div>
+                        <div class="blog-text">
+                            <h4>
+                                28 Nov 2022 Day 3 of #100DaysOfCode
+                            </h4>
+                            <p>
+                                The tutorial I was following to rebuild this site had a CSS animation effect on the
+                                project page that I didn't care for. It was bringing the back of the image, where there
+                                is links to the projects code, from scale(0) to scale(1). Not the animation I
+                                particularly liked so I changed it to one where the image flips 180deg to show the back
+                                instead.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3774&q=80"
+                            alt="pen near black lined paper and eyeglasses photo">
+                        <div class="photo-attribution">
+                            Photo by <a
+                                href="https://unsplash.com/@jessbaileydesigns?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jess
+                                Bailey</a> on <a
+                                href="https://unsplash.com/s/photos/blog-background?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                        </div>
+                        <div class="blog-text">
+                            <h4>
+                                27 Nov 2022 Day 2 of blogging
+                            </h4>
+                            <p>
+                                So this is the second day of it. Finished the video and started to customize the site a
+                                little bit by adding my own info into it. Think I'll use this a my own #100DaysOfCode
+                                challenge. No longer using Twitter becuase of the direction Elon Mush is taking it, so
+                                this will have to do. So anyways, second day of code! Going to do my best to keep this
+                                up!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3870&q=80"
+                            alt="person holding ballpoint pen writing on notebook photo">
+                        <div class="photo-attribution">
+                            Photo by <a
+                                href="https://unsplash.com/@thoughtcatalog?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Thought
+                                Catalog</a> on <a
+                                href="https://unsplash.com/s/photos/blog-background?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                        </div>
+                        <div class="blog-text">
+                            <h4>
+                                26 Nov 2022 Start of my blogging.
+                            </h4>
+                            <p>
+                                Decided to redo my portfolio site. Started following along with a youtube video on the
+                                FreeCodeCamp.org youtube channel. It had this blog section on it so I decided to start
+                                keeping one. Let's see how this goes!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section sec5 contact" id="contact">
+            <div class="main-title">
+                <h2>Contact <span>Me</span><span class="bg-text">contact me</span></h2>
+            </div>
+            <div class="contact-cnt">
+                <div class="contact-cnt">
+                    <div class="left-contact">
+                        <h4>Contact me here</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. In, laborum numquam? Quam excepturi
+                            perspiciatis qus qusi.
+                        </p>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Location: </span>
+                                </div>
+                                <p>
+                                    <span> Nashville, TN</span>
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>Email: </span>
+                                </div>
+                                <p>
+                                    <span> alexander.davidson.webdev@gmail.com</span>
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-user-graduate"></i>
+                                    <span>Education: </span>
+                                </div>
+                                <p>
+                                    <span> CareerFoundry.com</span>
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-user-graduate"></i>
+                                    <span>Mobile Number: </span>
+                                </div>
+                                <p>
+                                    <span> 9312592332</span>
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-globe-africa"></i>
+                                    <span>Languages: </span>
+                                </div>
+                                <p>
+                                    <span> English</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="contact-icons">
+                            <div class="contact-icon">
+                                <a href="www.facebook.com" target="_blank">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="www.github.com" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="www.facebook.com" target="_blank">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-contact">
+                        <form action="" class="contact-form">
+                            <div class="input-control input-control-2">
+                                <input type="text" required placeholder="YOUR NAME">
+                                <input type="email" required placeholder="EMAIL">
+                            </div>
+                            <div class="input-control">
+                                <input type="text" required placeholder="ENTER SUBJECT">
+                            </div>
+                            <div class="input-control">
+                                <textarea name="" id="" cols="15" rows="8" placeholder="ENTER MESSAGE"></textarea>
+                            </div>
+                            <div class="submit-btn">
+                                <a href="#" class="main-btn">
+                                    <span class="btn-text">Submit</span>
+                                    <span class="btn-icon"><i class="fas fa-envelope"></i></span>
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
-    <section class="highlighted-projects">
-      <h2>Here are some of my projects</h2>
-      <div class="grid-highlights">
-
-        <div class="highlights-grid-item">
-
-          <a href="img/myFlix-React-client.png"><img src="img/myFlix-React-client.png" class="project-img-r"
-              style="max-width: 400px" alt="Picture of my flix app, react version."></a>
-          <h2>myFlix</h2>
-          <p>An app for viewing details about movies. Two versions, one with MEAN stack and one with MERN stack.</p>
-          <a href="projects/myFlix.html" class="details-link">Click here for details!</a>
+    <div class="controls">
+        <div class="control control-1 active-btn" data-id="home">
+            <i class="fa-sharp fa-solid fa-house">
+                <p class="control-text">Home</p>
+            </i>
         </div>
-
-        <div class="highlights-grid-item">
-
-          <a href="img/meet-app.png"><img src="img/meet-app.png" class="project-img-l" style="max-width: 400px"
-              alt="Picture of meet app."></a>
-          <h2>Meet App</h2>
-          <p>An app for finding events to attend.</p>
-          <a href="projects/meet.html" class="details-link">Click here for details!</a>
+        <div class="control control-2 " data-id="about">
+            <i class=" fa-solid fa-user">
+                <p class="control-text">About</p>
+            </i>
         </div>
-
-        <div class="highlights-grid-item">
-
-          <a href="img/hello-world.png"><img src="img/hello-world.png" class="project-img-r"
-              style="max-width: 175px; max-height: 200px;" alt="picture of hello world app"></a>
-          <h2>Hello-World</h2>
-          <p>A mobile chat app.</p>
-          <a href="projects/helloWorld.html" class="details-link">Click here for details!</a>
+        <div class="control control-3 " data-id="portfolio">
+            <i class="fa-solid fa-computer">
+                <p class="control-text">Portfolio</p>
+            </i>
         </div>
-
-      </div>
-    </section>
-
-  </div>
-
-  <footer class="page-footer">
-    <p>Find me on</p>
-    <div class="social-media">
-      <a href="https://www.github.com/Adavidson87/" target="_blank"><img src="img/github_icon.svg"
-          alt="Github icon"></a>
-      <a href="https://www.linkedin.com/in/alexanderdavidson87/" target="_blank"><img src="img/linkedin_icon.svg"
-          alt="LinkedIn icon"></a>
-      <a href="https://medium.com/@alexander.davidson87" target="_blank"><img src="img/medium_icon.svg"
-          alt="Medium icon"></a>
-      <a href="https://twitter.com/AwDavidson87" target="_blank"><img src="img/twitter_icon.svg" alt="Twitter Icon"></a>
+        <div class="control control-4 " data-id="blogs">
+            <i class="fa-solid fa-book">
+                <p class="control-text">Blogs</p>
+            </i>
+        </div>
+        <div class="control control-5 " data-id="contact">
+            <i class="fa-solid fa-envelope">
+                <p class="control-text">Contact</p>
+            </i>
+        </div>
     </div>
-  </footer>
 
-  <script src="js/tota11y.min.js"></script>
+    <div class="theme-btn">
+        <i class="fas fa-adjust"></i>
+    </div>
+
 </body>
 
+<script src="js/index.js"></script>
 
 </html>

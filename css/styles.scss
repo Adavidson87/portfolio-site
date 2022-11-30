@@ -25,7 +25,7 @@
 }
 .light-mode {
   --color-primary: rgb(224, 224, 224);
-  --color-secondary: #D83B18;
+  --color-secondary: #d83b18;
   --white: #000;
   --black: #fff;
   --gray-0: #12181b;
@@ -415,6 +415,10 @@ section {
     p {
       color: var(--gray-2);
     }
+    ul li {
+      display: list-item;
+      list-style-type: disc;
+    }
   }
 }
 
@@ -577,13 +581,18 @@ section {
       overflow-y: auto;
       scrollbar-gutter: auto;
       scrollbar-color: transparent;
-      h4 {
-        font-size: 1.5rem;
+      .blog-title {
         margin-bottom: 0.7rem;
         transition: var(--transition);
         cursor: pointer;
         &:hover {
           color: var(--color-secondary);
+        }
+        h4 {
+          font-size: 1.5rem;
+        }
+        h5 {
+          font-size: 1.3rem;
         }
       }
       p {
@@ -703,9 +712,6 @@ section {
     }
     .input-control-2 {
       display: flex;
-      :last-child {
-        margin-left: 1.5rem;
-      }
     }
     .submit-btn {
       display: flex;

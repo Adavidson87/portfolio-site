@@ -3,7 +3,7 @@
     padding: 7rem 11rem;
   }
   header {
-    padding: 0 !important;
+    padding: 0;
   }
   .about-cnt {
     padding-top: 2.5rem;
@@ -26,9 +26,9 @@
 }
 
 @media screen and (max-width: 1070px) {
-  // .header .right-header {
-  //   padding: 6rem !important;
-  // }
+  .header .right-header {
+    padding: 6rem !important;
+  }
   .about-cnt {
     grid-template-columns: 1fr;
     padding-top: 2.5rem !important;
@@ -73,8 +73,8 @@
   }
   .right-header {
     grid-row: 1;
-    width: 90% !important;
-    margin: 0 auto !important;
+    width: 90%;
+    margin: 0 auto;
     .name {
       font-size: 2.5rem !important;
     }
@@ -112,6 +112,9 @@
 }
 
 @media screen and (max-width: 600px) {
+  header .right-header {
+    padding: 0 !important;
+  }
   .timeline {
     grid-template-columns: 1fr !important;
     padding-bottom: 6rem !important;

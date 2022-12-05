@@ -351,7 +351,7 @@
                 <h2>My <span>Blogs</span></h2>
             </div>
             <div class="blogs-cnt">
-                <div class="blogs">
+                <ul class="blogs" id="paginated-list" aria-live="polite">
                     <!-- <div class="blog">
                         <img src="" alt="">
                         <div class="photo-attribution">Photo by target="_blank"</div>
@@ -362,7 +362,7 @@
                             <p>Blog Text</p>
                         </div>
                     </div> -->
-                    <div class="blog">
+                    <li class="blog" id="li">
                         <img src="https://images.unsplash.com/photo-1457369804613-52c61a468e7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80"
                             alt="open book lot">
                         <div class="photo-attribution">Photo by <a
@@ -377,10 +377,10 @@
                                 <h5>Day 9 of #100DaysOfCode</h5>
                             </div>
                             <p>Worked on formatting contact form some more to eliminate the labels and text fields
-                                crowding.</p>
+                                crowding. Started implementing pagination on the blog page.</p>
                         </div>
-                    </div>
-                    <div class="blog">
+                    </li>
+                    <li class="blog" id="li">
                         <img src="https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2346&q=80"
                             alt="turned off MacBook Pro beside white ceramic mug filled with coffee">
                         <div class="photo-attribution">Photo by <a
@@ -396,8 +396,8 @@
                             </div>
                             <p>Didn't code anything today, took a day off.</p>
                         </div>
-                    </div>
-                    <div class="blog">
+                    </li>
+                    <li class="blog" id="li">
                         <img src="https://images.unsplash.com/photo-1661956600684-97d3a4320e45?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80"
                             alt="woman working on laptop">
                         <div class="photo-attribution">Photo by <a
@@ -415,8 +415,8 @@
                                 transition I made. I changed the page transition to go from showing up on the y axis to
                                 the x axis and this caused the navbar to load incorrectly.</p>
                         </div>
-                    </div>
-                    <div class="blog">
+                    </li>
+                    <li class="blog" id="li">
                         <img src="https://images.unsplash.com/photo-1661961110671-77b71b929d52?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80"
                             alt="laptop sitting on table">
                         <div class="photo-attribution">Photo by <a
@@ -432,8 +432,8 @@
                             </div>
                             <p>Worked on issue with navbar not loading correctly. Unsure what is causing it.</p>
                         </div>
-                    </div>
-                    <div class="blog">
+                    </li>
+                    <li class="blog" id="li">
                         <img src="https://images.unsplash.com/photo-1512386233331-f023884a92e8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2695&q=80"
                             alt="green plant photo">
                         <div class="photo-attribution">Photo by <a
@@ -450,8 +450,8 @@
                             <p>I worked on adding content to the home page and
                                 about me page today. Did some formating and added icons to the "My Skills" section.</p>
                         </div>
-                    </div>
-                    <div class="blog">
+                    </li>
+                    <li class="blog" id="li">
                         <img src="https://images.unsplash.com/photo-1526566762798-8fac9c07aa98?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2304&q=80"
                             alt="brown ceramic coffee mug on book photo">
                         <div class="photo-attribution">Photo by <a
@@ -472,8 +472,8 @@
                                 title layout.
                             </p>
                         </div>
-                    </div>
-                    <div class="blog">
+                    </li>
+                    <li class="blog" id="li">
                         <img src="https://images.unsplash.com/photo-1518655048521-f130df041f66?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3870&q=80"
                             alt="magic keyboard beside mug and click pen photo">
                         <div class="photo-attribution">Photo by <a
@@ -493,8 +493,8 @@
                                 of the revamp.
                             </p>
                         </div>
-                    </div>
-                    <div class="blog">
+                    </li>
+                    <li class="blog" id="li">
                         <img src="https://images.unsplash.com/photo-1432821596592-e2c18b78144f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3870&q=80"
                             alt="vintage teal typewriter beside book photo">
                         <div class="photo-attribution">
@@ -516,8 +516,8 @@
                                 rotates 180 degrees to show the back.
                             </p>
                         </div>
-                    </div>
-                    <div class="blog">
+                    </li>
+                    <li class="blog" id="li">
                         <img src="https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3774&q=80"
                             alt="pen near black lined paper and eyeglasses photo">
                         <div class="photo-attribution">
@@ -538,8 +538,8 @@
                                 Worked on adding content and making some small tweaks to the css here and there.
                             </p>
                         </div>
-                    </div>
-                    <div class="blog">
+                    </li>
+                    <li class="blog" id="li">
                         <img src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3870&q=80"
                             alt="person holding ballpoint pen writing on notebook photo">
                         <div class="photo-attribution">
@@ -562,8 +562,21 @@
                                 keeping one, and do my own #100DaysOfCode with it. Let's see how this goes!
                             </p>
                         </div>
+                    </li>
+                </ul>
+                <nav class="pagination-container">
+                    <button class="pagination-button" id="prev-button" title="Previous page" aria-label="Previous page">
+                        &lt;
+                    </button>
+
+                    <div id="pagination-numbers">
+
                     </div>
-                </div>
+
+                    <button class="pagination-button" id="next-button" title="Next page" aria-label="Next page">
+                        &gt;
+                    </button>
+                </nav>
             </div>
         </section>
 

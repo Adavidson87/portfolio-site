@@ -693,7 +693,7 @@ section {
         font-size: inherit;
         font-family: inherit;
         padding: 0.8rem 1.1rem;
-        margin-top: .75rem;
+        margin-top: 0.75rem;
         outline: none;
         border: none;
         background-color: var(--gray-5);
@@ -773,4 +773,39 @@ section {
       color: var(--color-secondary);
     }
   }
+}
+
+/* Pagination container */
+.pagination-container {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  justify-content: center;
+  left: 50%;
+  background-color: var(--gray-5);
+  border-radius: 30px;
+}
+
+.pagination-number,
+.pagination-button {
+  font-size: 1.1rem;
+  background-color: transparent;
+  border: none;
+  margin: 0.25rem 0.25rem;
+  cursor: pointer;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 0.2rem;
+  color: var(--white);
+}
+
+.pagination-number:hover,
+.pagination-button:not(.disabled):hover {
+  background: var(--color-secondary);
+}
+
+.pagination-number.active {
+  color: var(--white);
+  background: var(--gray-3);
 }

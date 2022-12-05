@@ -98,7 +98,7 @@ section {
   animation: scaleAnim 1s ease-in-out;
   @keyframes scaleAnim {
     0% {
-      transform: translateX(100%) scaleY(0);
+      transform: translateY(-100%) scaleY(0);
     }
 
     100% {
@@ -110,7 +110,6 @@ section {
 // Controls
 .controls {
   position: fixed;
-  z-index: 10;
   top: 50%;
   right: 3%;
   display: flex;
@@ -163,10 +162,11 @@ section {
   }
 }
 .theme-btn {
-  top: 5%;
-  right: 3%;
+  top: 0;
+  right: 0;
   width: 50px;
   height: 50px;
+  margin: 20px;
   border-radius: 50%;
   background-color: var(--gray-4);
   cursor: pointer;
@@ -260,7 +260,7 @@ section {
       box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
       &:hover {
         cursor: default;
-        transform: translateY(-5px);
+        transform: scale(1.05);
         border: 1px solid var(--color-secondary);
         box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.32);
       }
@@ -626,8 +626,7 @@ section {
           a {
             color: var(--color-secondary);
             text-decoration: underline;
-            word-wrap: break-word;
-            width: 170px;
+            overflow-wrap: anywhere;
             text-align: right;
             &:hover {
               text-shadow: 0 0 5px var(--gray-3);
@@ -644,6 +643,9 @@ section {
             font-size: 1.3rem;
           }
         }
+      }
+      .contact-item-name {
+        margin-right: 1rem;
       }
     }
     .contact-icon {
@@ -691,6 +693,7 @@ section {
         font-size: inherit;
         font-family: inherit;
         padding: 0.8rem 1.1rem;
+        margin-top: .75rem;
         outline: none;
         border: none;
         background-color: var(--gray-5);
@@ -701,6 +704,13 @@ section {
     }
     .input-control-2 {
       display: flex;
+      margin: 1.5rem 0;
+      .input-control-3 {
+        width: 100%;
+      }
+    }
+    .input-control-3:last-child {
+      margin-left: 1rem;
     }
     .submit-btn {
       display: flex;
@@ -761,17 +771,6 @@ section {
     font-weight: 700;
     span {
       color: var(--color-secondary);
-    }
-    .bg-text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      color: var(--gray-5);
-      transition: var(--transition);
-      z-index: -1;
-      transform: translate(-50%, -50%);
-      font-weight: 800;
-      font-size: 6.3rem;
     }
   }
 }

@@ -520,6 +520,7 @@ section {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
   margin-top: 3rem;
+  margin-bottom: 3rem;
   .blog {
     position: relative;
     background-color: var(--gray-5);
@@ -778,34 +779,42 @@ section {
 /* Pagination container */
 .pagination-container {
   display: flex;
-  align-items: center;
-  position: absolute;
+  position: relative;
   bottom: 0;
+  align-items: center;
   justify-content: center;
-  left: 50%;
   background-color: var(--gray-5);
   border-radius: 30px;
+  max-width: 275px;
+  margin: auto;
+  // margin-top: 1.5rem;
+  // margin-bottom: 3.5rem;
+  .pagination-number,
+  .pagination-button {
+    display: inline;
+    font-size: 1.1rem;
+    background-color: transparent;
+    border: none;
+    margin: 0.5rem 0.5rem;
+    cursor: pointer;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 0.2rem;
+    color: var(--white);
+  }
+  .pagination-number:hover,
+  .pagination-button:not(.disabled):hover {
+    background: var(--color-secondary);
+  }
+  .pagination-number.active {
+    color: var(--white);
+    background: var(--gray-3);
+  }
+  .pagination-button.disabled {
+    color: var(--gray-3)
+  }
 }
 
-.pagination-number,
-.pagination-button {
-  font-size: 1.1rem;
-  background-color: transparent;
-  border: none;
-  margin: 0.25rem 0.25rem;
-  cursor: pointer;
-  height: 2.5rem;
-  width: 2.5rem;
-  border-radius: 0.2rem;
-  color: var(--white);
-}
-
-.pagination-number:hover,
-.pagination-button:not(.disabled):hover {
-  background: var(--color-secondary);
-}
-
-.pagination-number.active {
-  color: var(--white);
-  background: var(--gray-3);
+.hidden {
+  display: none;
 }
